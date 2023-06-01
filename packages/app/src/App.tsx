@@ -35,6 +35,7 @@ import { RequirePermission } from '@backstage/plugin-permission-react';
 import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
 import { HomePageCompanyLogo, HomepageCompositionRoot } from '@backstage/plugin-home';
 import { HomePage } from './components/home/HomePage';
+import { DevopsPage } from './components/devops/DevopsPage';
 
 const app = createApp({
   apis,
@@ -59,7 +60,10 @@ const routes = (
   <FlatRoutes>
     {/* <Route path="/" element={<Navigate to="catalog" />} /> */}
     <Route path="/" element={<HomepageCompositionRoot />}>
-        <HomePageCompanyLogo />
+        <HomePage />
+    </Route>
+    <Route path="/devops" element={<HomepageCompositionRoot />}>
+        <DevopsPage />  
     </Route>
     <Route path="/catalog" element={<CatalogIndexPage />} />
     <Route
