@@ -1,13 +1,8 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Group
 metadata:
-  name: backstage
-  description: An example of a Backstage application.
-  # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  name: my-github-org
+  description: My GitHub Organization
 spec:
-  type: website
-  owner: john@example.com
-  lifecycle: experimental
+  type: github
+  profile: https://github.com/syngenta-digital/

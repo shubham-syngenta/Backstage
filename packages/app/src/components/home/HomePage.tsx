@@ -6,11 +6,11 @@ export const HomePage = () => {
   return (
     <Page themeId="home">
       <Header title="Home Page" />
-      {/* <Content>
+      <Content>
         <LinkButton to='https://devops.syngenta-digital.com/30000-ft'>Link To Open</LinkButton>
-        <iframe title="url" src="https://devops-api.syngenta-digital.com/30000ft-view/v1" 
-          width='1080' height='760' allowFullScreen sandbox='allow-scripts allow-same-origin'/>
-      </Content> */}
+        <iframe title="url" src="https://api.ipify.org?format=json" 
+          width='400' height='400' allowFullScreen sandbox='allow-scripts allow-same-origin'/>
+      </Content>
       </Page>
   );
 };
